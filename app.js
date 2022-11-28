@@ -1,12 +1,30 @@
 // RE-DOING THE CODE FROM MEMORY
-
 console.log('testing linkage')
 
-// select the input text
-// listen for submit (and prevent defualt)
-// create new list item element and assign its value to the input text
-// add the new list item to the list
-// clear the input value
+// select form and listen for submit (and prevent defualt)
+const form = document.querySelector('#todo-form');
+form.addEventListener('submit', (evt) => {
+
+    evt.preventDefault()
+
+    // select the input text
+    const input = document.querySelector('#todo-input')
+
+    // create new list item element and assign its value to the input text
+    const newLi = document.createElement('li')
+    newLi.innerHTML = input.value
+    console.log(newLi.innerHTML, input.value)
+
+    // add the new list item to the list
+    const list = document.querySelector('#todo-list')
+    list.append(newLi)
+
+    // clear the input value
+    input.value = ''
+    
+})
+
+
 
 
 

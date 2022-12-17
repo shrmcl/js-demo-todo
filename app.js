@@ -8,7 +8,7 @@
 // clear the input
 
 
-const form = document.getElementById('todoForm')
+const form = document.getElementById('todoForm');
 
 form.addEventListener('submit', (evt) => {
     evt.preventDefault()

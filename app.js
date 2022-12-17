@@ -20,9 +20,17 @@ form.addEventListener('submit', (evt) => {
     const list = document.querySelector('#list');
     list.append(newTodo);
 
-    console.log(input.value);
+    const items = document.querySelectorAll('li');
+    // console.log('all lis', items)
+    items.forEach(el => el.addEventListener('click', (evt) => {
+        console.log('this event target', evt.target);
+        evt.target.remove()
+    }))
+
     input.value = '';
 })
+
+
 
 
 

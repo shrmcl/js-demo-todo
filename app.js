@@ -23,8 +23,10 @@ form.addEventListener('submit', (evt) => {
     const items = document.querySelectorAll('li');
     // console.log('all lis', items)
     items.forEach(el => el.addEventListener('click', (evt) => {
-        console.log('this event target', evt.target);
-        evt.target.remove()
+        // console.log('this event target', evt.target);
+        // evt.target.remove();
+        evt.target.style.color = 'green';
+        evt.target.style.textDecoration = 'line-through';
     }))
 
     input.value = '';

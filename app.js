@@ -25,8 +25,8 @@ form.addEventListener('submit', (evt) => {
     items.forEach(el => el.addEventListener('click', (evt) => {
         // console.log('this event target', evt.target);
         // evt.target.remove();
-        evt.target.style.color = 'green';
-        evt.target.style.textDecoration = 'line-through';
+        evt.target.style.color = 'rgba(0,0,0,0.2)';
+        // evt.target.style.textDecoration = 'line-through';
     }))
 
     input.value = '';

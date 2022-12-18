@@ -6,16 +6,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todo Redo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Joan&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Joan&display=swap');
+        body {
+            font-family: 'Joan', serif;
+            padding: 10px 2%;
+        }
+        form {
+            margin: 0 auto;
+        }
+        li {
+            font-size: 2rem;
+        }
+        h1 {
+            display: inline-block;
+            padding: 30px;
+            border-radius: 2px;
+            font-family: monospace;
+            font-weight: normal;
+            font-style: italic;
+            font-size: 1rem;
+            background: rgb(2,0,36);
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(197,235,255,1) 0%, rgba(255,224,253,1) 0%, rgba(250,255,193,1) 100%);
+        }
+        ul {
+         list-style: none;   
+         padding-left: 0;
+        }
+        #newTodo {
+            padding: 20px;
+        }
+        #submission {
+            padding: 20px;
+            background-color: black;
+            border: 2px solid black;
+            border-radius: 20px;
+            color: white
+        }
+    </style>
+    <title>Todo App</title>
     
 </head>
 <body>
-    <h1>Todo App</h1>
+    <h1>Don't Forget ...</h1>
     <form action="" id="todoForm">
         <input type="text" placeholder="add a todo" id="newTodo">
         <button type="submit" id="submission">Add</button>
         <ul id="list">
-            <li>First thing</li>
+            <li>bok choy</li>
+            <li>onions</li>
+            <li>chips</li>
+            <li>ice in a bag</li>
+            <li>smokes</li>
         </ul>
     </form>
 
